@@ -1,6 +1,6 @@
-import 'package:fashion_app/common/utils/kcolors.dart';
-import 'package:fashion_app/common/widgets/custom_button.dart';
-import 'package:fashion_app/const/constants.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/widgets/custom_button.dart';
+import 'package:emart_store/const/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,7 +13,6 @@ Future<dynamic> logoutBottomSheet(BuildContext context) {
         decoration: BoxDecoration(borderRadius: kRadiusTop),
         child: ListView(
           children: [
-           
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Row(
@@ -30,9 +29,7 @@ Future<dynamic> logoutBottomSheet(BuildContext context) {
                   ),
                   GradientBtn(
                     text: "Submit",
-                    onTap: () {
-                     
-                    },
+                    onTap: () {},
                     btnHieght: 35.h,
                     radius: 16,
                     btnWidth: ScreenUtil().screenWidth / 2.2,

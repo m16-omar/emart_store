@@ -1,5 +1,5 @@
-import 'package:fashion_app/common/utils/kcolors.dart';
-import 'package:fashion_app/common/widgets/app_style.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
@@ -74,7 +74,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
                 'Contact Us:',
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
               ),
-               SizedBox(height: 10.h),
+              SizedBox(height: 10.h),
               const Row(
                 children: [
                   Icon(MaterialCommunityIcons.email_outline),

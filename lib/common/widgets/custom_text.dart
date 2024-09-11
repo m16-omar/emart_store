@@ -1,5 +1,5 @@
-import 'package:fashion_app/common/utils/kcolors.dart';
-import 'package:fashion_app/common/widgets/app_style.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -11,7 +11,8 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.hintText,
     this.focusNode,
-    this.initialValue, this.maxLines,
+    this.initialValue,
+    this.maxLines,
   });
   final String? hintText;
   final Widget? prefixIcon;
@@ -26,10 +27,9 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
         cursorColor: Colors.black,
-        maxLines: maxLines??1,
+        maxLines: maxLines ?? 1,
         textInputAction: TextInputAction.next,
         onEditingComplete: onEditingComplete,
-        
         keyboardType: keyboardType,
         initialValue: initialValue,
         controller: controller,
@@ -42,7 +42,6 @@ class CustomTextField extends StatelessWidget {
         },
         style: appStyle(12, Kolors.kDark, FontWeight.normal),
         decoration: InputDecoration(
-
           hintText: hintText,
           isDense: true,
           contentPadding: const EdgeInsets.all(9),

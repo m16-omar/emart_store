@@ -1,5 +1,5 @@
 import 'package:cross_connectivity/cross_connectivity.dart';
-import 'package:fashion_app/common/widgets/offline_page.dart';
+import 'package:emart_store/common/widgets/offline_page.dart';
 import 'package:flutter/material.dart';
 
 class SensitiveContainer extends StatelessWidget {

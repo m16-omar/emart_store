@@ -1,4 +1,4 @@
-import 'package:fashion_app/common/utils/kcolors.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:go_router/go_router.dart';
@@ -7,7 +7,8 @@ class AppBackButton extends StatelessWidget {
   const AppBackButton({
     super.key,
     this.color,
-    this.size, this.onTap,
+    this.size,
+    this.onTap,
   });
 
   final Color? color;
