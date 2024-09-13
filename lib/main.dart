@@ -1,12 +1,24 @@
+import 'package:emart_store/common/utils/app_routes.dart';
 import 'package:emart_store/common/utils/environment.dart';
+import 'package:emart_store/common/utils/kstrings.dart';
+import 'package:emart_store/src/onboarding/controllers/onboarding_notifier.dart';
+import 'package:emart_store/src/splashscreen/views/splashscreen_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //load the correct environment
   await dotenv.load(fileName: Environment.fileName);
-  runApp(const MyApp());
+
+  await GetStorage.init();
+  runApp(MultiProvider(
+    providers: [ChangeNotifierProvider(create: (_) => OnboardingNotifier())],
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -15,13 +27,24 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+    Size screenSize = MediaQuery.of(context).size;
+    return ScreenUtilInit(
+      designSize: screenSize,
+      minTextAdapt: true,
+      splitScreenMode: false,
+      useInheritedMediaQuery: true,
+      builder: (_, child) {
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          title: AppText.kAppaName,
+          theme: ThemeData(
+            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            useMaterial3: true,
+          ),
+          routerConfig: router,
+        );
+      },
+      child: const SplashScreen(),
     );
   }
 }

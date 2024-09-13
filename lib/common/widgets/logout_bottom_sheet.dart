@@ -1,13 +1,11 @@
-import 'package:fashion_app/common/utils/kcolors.dart';
-import 'package:fashion_app/common/utils/kstrings.dart';
-import 'package:fashion_app/common/widgets/app_style.dart';
-import 'package:fashion_app/common/widgets/custom_button.dart';
-import 'package:fashion_app/common/widgets/reusable_text.dart';
-import 'package:fashion_app/const/constants.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/utils/kstrings.dart';
+import 'package:emart_store/common/widgets/app_style.dart';
+import 'package:emart_store/common/widgets/custom_button.dart';
+import 'package:emart_store/common/widgets/reusable_text.dart';
+import 'package:emart_store/const/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
-import 'package:provider/provider.dart';
 
 Future<dynamic> logoutBottomSheet(BuildContext context) {
   return showModalBottomSheet<void>(
