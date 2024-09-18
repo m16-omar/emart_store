@@ -2,7 +2,7 @@ import 'package:emart_store/common/utils/app_routes.dart';
 import 'package:emart_store/common/utils/environment.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/src/onboarding/controllers/onboarding_notifier.dart';
-import 'package:emart_store/src/splashscreen/views/splashscreen_page.dart';
+import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

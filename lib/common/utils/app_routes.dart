@@ -1,6 +1,6 @@
 import 'package:emart_store/src/entrypoint/views/entrypoint.dart';
 import 'package:emart_store/src/onboarding/views/onboarding_screen.dart';
-import 'package:emart_store/src/splashscreen/views/splashscreen_page.dart';
+import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

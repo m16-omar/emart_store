@@ -7,9 +7,19 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final pro = Provider.of<OnboardingNotifier>(context);
     return Scaffold(
-      body: Center(
-        child: Text(context.read<OnboardingNotifier>().selectedPage.toString()),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          TextButton(
+              onPressed: () {
+                pro.setSelectedPage = 2;
+              },
+              child: Text('Increment')),
+          Text(pro.selectedPage.toString()),
+        ],
       ),
     );
   }

@@ -34,6 +34,7 @@ class AppText {
   static const String kDelivered = 'Delivered';
   static const String kStatus = 'Order Status';
   static const String kDetails = 'Order Details';
+  static const String kGetStarted = 'Get Started';
   static const String kLocation = 'What is Your Location';
   static const String kLocationButton = 'Add Address';
   static const String kCart = 'Cart';
