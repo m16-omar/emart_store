@@ -32,7 +32,7 @@ class R {
       'assets/images/placeholder.webp';
 
   /// ![preview](file:///Volumes/Transfer/Projects/fashion/assets/images/splashscreen.png)
-  static const String ASSETS_IMAGES_SPLASHSCREEN_PNG =
+  static const String ASSETS_IMAGES_SPLASHSCREEN_WEBP =
       'assets/images/splashscreen.png';
 
   /// ![preview](file:///Volumes/Transfer/Projects/fashion/assets/images/wishlist.png)

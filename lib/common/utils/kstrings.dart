@@ -62,7 +62,7 @@ class AppText {
   static const String kOnboardWishListMessage =
       "Your Wishlist awaits! Curate your dream looks and save favorites for later. It's the first step to making style aspirations a reality";
   static const String kOnboardHome =
-      "Welcome to the ultimate fashion destination! Discover trends, shop your favorite styles, and elevate your wardrobe. Let's get started on your stylish journey today";
+      "Welcome to the e-Mart Store! Discover trends, shop your favorite styles, and elevate your wardrobe. Let's get started on your stylish journey today";
 }
 
 // Your Wishlist awaits! Curate your dream looks and save favorites for later. It's the first step to making style aspirations a reality
