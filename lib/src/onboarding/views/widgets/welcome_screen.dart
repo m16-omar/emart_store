@@ -1,9 +1,12 @@
+import 'package:emart_store/common/services/storage.dart';
 import 'package:emart_store/common/utils/kcolors.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
+import 'package:emart_store/common/widgets/custom_button.dart';
 import 'package:emart_store/const/resource.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -31,6 +34,27 @@ class WelcomeScreen extends StatelessWidget {
             ),
             SizedBox(
               height: 30.h,
+            ),
+            SizedBox(
+              width: ScreenUtil().screenWidth - 100,
+              child: Text(
+                AppText.kWelcomeMessage,
+                textAlign: TextAlign.center,
+                style: appStyle(11, Kolors.kGray, FontWeight.normal),
+              ),
+            ),
+            SizedBox(
+              height: 30.h,
+            ),
+            GradientBtn(
+              text: AppText.kGetStarted,
+              btnHieght: 35,
+              radius: 20,
+              btnWidth: ScreenUtil().screenWidth - 100,
+              onTap: () {
+                // Storage().setBool('fistOpen', true);
+                context.go('/home');
+              },
             ),
           ],
         ),
