@@ -1,4 +1,3 @@
-import 'package:emart_store/common/services/storage.dart';
 import 'package:emart_store/common/utils/kcolors.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
@@ -52,9 +51,13 @@ class WelcomeScreen extends StatelessWidget {
               radius: 20,
               btnWidth: ScreenUtil().screenWidth - 100,
               onTap: () {
+                // TODO: uncomment the bool storage when the app is ready
                 // Storage().setBool('fistOpen', true);
                 context.go('/home');
               },
+            ),
+            Row(
+              children: [],
             ),
           ],
         ),
