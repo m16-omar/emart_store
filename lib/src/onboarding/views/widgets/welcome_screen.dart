@@ -2,6 +2,7 @@ import 'package:emart_store/common/utils/kcolors.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:emart_store/common/widgets/custom_button.dart';
+import 'package:emart_store/common/widgets/reusable_text.dart';
 import 'package:emart_store/const/resource.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -56,8 +57,25 @@ class WelcomeScreen extends StatelessWidget {
                 context.go('/home');
               },
             ),
+            SizedBox(
+              height: 20.h,
+            ),
             Row(
-              children: [],
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ReusableText(
+                  text: "Already have an Account?",
+                  style: appStyle(12, Kolors.kDark, FontWeight.normal),
+                ),
+                TextButton(
+                    onPressed: () {
+                      // navigate to login screen
+                    },
+                    child: Text(
+                      "Sign In",
+                      style: TextStyle(fontSize: 12, color: Colors.blue),
+                    ))
+              ],
             ),
           ],
         ),
