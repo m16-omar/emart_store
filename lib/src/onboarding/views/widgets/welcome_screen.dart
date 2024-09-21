@@ -70,6 +70,7 @@ class WelcomeScreen extends StatelessWidget {
                 TextButton(
                     onPressed: () {
                       // navigate to login screen
+                      context.go('/login');
                     },
                     child: Text(
                       "Sign In",
