@@ -28,7 +28,7 @@ class R {
       'assets/images/getstarted.png';
 
   /// ![preview](file:///Volumes/Transfer/Projects/fashion/assets/images/placeholder.webp)
-  static const String ASSETS_IMAGES_PLACEHOLDER_WEBP =
+  static const String ASSETS_IMAGES_PLACEHOLDER1_WEBP =
       'assets/images/placeholder.webp';
 
   /// ![preview](file:///Volumes/Transfer/Projects/fashion/assets/images/splashscreen.png)

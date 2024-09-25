@@ -1,5 +1,6 @@
 import 'package:emart_store/src/auth/views/login_screen.dart';
 import 'package:emart_store/src/entrypoint/views/entrypoint.dart';
+import 'package:emart_store/src/notification/views/notification_screen.dart';
 import 'package:emart_store/src/onboarding/views/onboarding_screen.dart';
 import 'package:emart_store/src/search/views/search_screen.dart';
 import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
@@ -80,10 +81,10 @@ final GoRouter _router = GoRouter(
     //   builder: (context, state) => const AddressesListPage(),
     // ),
 
-    //  GoRoute(
-    //   path: '/notifications',
-    //   builder: (context, state) => const NotificationPage(),
-    // ),
+    GoRoute(
+      path: '/notifications',
+      builder: (context, state) => const NotificationsScreen(),
+    ),
 
     //  GoRoute(
     //   path: '/tracking',
