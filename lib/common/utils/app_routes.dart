@@ -1,6 +1,7 @@
 import 'package:emart_store/src/auth/views/login_screen.dart';
 import 'package:emart_store/src/entrypoint/views/entrypoint.dart';
 import 'package:emart_store/src/onboarding/views/onboarding_screen.dart';
+import 'package:emart_store/src/search/views/search_screen.dart';
 import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -15,14 +16,17 @@ final GoRouter _router = GoRouter(
       path: '/',
       builder: (context, state) => const SplashScreen(),
     ),
+
     GoRoute(
       path: '/home',
-      builder: (context, state) => const AppEntryPoint(),
+      builder: (context, state) => AppEntryPoint(),
     ),
+
     GoRoute(
       path: '/onboarding',
       builder: (context, state) => const OnBoardingScreen(),
     ),
+
     // GoRoute(
     //   path: '/review',
     //   builder: (context, state) => const ReviewsPage(),
@@ -35,10 +39,10 @@ final GoRouter _router = GoRouter(
     //   path: '/verification',
     //   builder: (context, state) => const VerificationPage(),
     // ),
-    // GoRoute(
-    //   path: '/search',
-    //   builder: (context, state) => const SearchPage(),
-    // ),
+    GoRoute(
+      path: '/search',
+      builder: (context, state) => const SearchScreen(),
+    ),
     // GoRoute(
     //   path: '/help',
     //   builder: (context, state) => const HelpCenterPage(),
@@ -47,10 +51,12 @@ final GoRouter _router = GoRouter(
     //   path: '/orders',
     //   builder: (context, state) => const OrdersPage(),
     // ),
+
     GoRoute(
       path: '/login',
       builder: (context, state) => const LoginScreen(),
     ),
+
     // GoRoute(
     //   path: '/register',
     //   builder: (context, state) => const RegistrationPage(),

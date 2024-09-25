@@ -1,6 +1,7 @@
 import 'package:emart_store/common/utils/app_routes.dart';
 import 'package:emart_store/common/utils/environment.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
+import 'package:emart_store/src/entrypoint/controllers/bottom_tab_notifier.dart';
 import 'package:emart_store/src/onboarding/controllers/onboarding_notifier.dart';
 import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,10 @@ void main() async {
 
   await GetStorage.init();
   runApp(MultiProvider(
-    providers: [ChangeNotifierProvider(create: (_) => OnboardingNotifier())],
+    providers: [
+      ChangeNotifierProvider(create: (_) => OnboardingNotifier()),
+      ChangeNotifierProvider(create: (_) => TabIndexNotifier()),
+    ],
     child: MyApp(),
   ));
 }
