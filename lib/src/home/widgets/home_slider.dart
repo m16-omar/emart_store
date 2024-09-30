@@ -72,6 +72,5 @@ class HomeSlider extends StatelessWidget {
 
 List<String> images = [
   "assets/images/placeholder1.webp",
-  "assets/images/placeholder2.jpg",
-  "assets/images/placeholder3.jpg",
+  "assets/images/placeholder1.webp",
 ];
