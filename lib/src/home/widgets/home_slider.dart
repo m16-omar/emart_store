@@ -1,6 +1,7 @@
 import 'package:emart_store/common/utils/kcolors.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
+import 'package:emart_store/common/widgets/custom_button.dart';
 import 'package:emart_store/common/widgets/reusable_text.dart';
 import 'package:emart_store/const/constants.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,7 @@ class HomeSlider extends StatelessWidget {
                   SizedBox(
                     height: 10.h,
                   ),
-                  // CustomButton(text: "Shop Now", btnWidth: 150.w)
+                  CustomButton(text: "Shop Now", btnWidth: 150.w),
                 ],
               ),
             ),

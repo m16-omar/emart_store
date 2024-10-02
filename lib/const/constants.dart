@@ -1,4 +1,5 @@
 import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/const/resource.dart';
 import 'package:flutter/material.dart';
 
 LinearGradient kGradient = const LinearGradient(
@@ -48,12 +49,12 @@ BorderRadiusGeometry kRadiusBottom = const BorderRadius.only(
 );
 
 Widget Function(BuildContext, String)? placeholder = (p0, p1) => Image.asset(
-      'assets/images/placeholder1.webp',
+      R.ASSETS_IMAGES_PLACEHOLDER1_WEBP,
       fit: BoxFit.cover,
     );
 
 Widget Function(BuildContext, String, Object)? errorWidget =
     (p0, p1, p3) => Image.asset(
-          'assets/images/placeholder1.webp',
+          R.ASSETS_IMAGES_PLACEHOLDER1_WEBP,
           fit: BoxFit.cover,
         );
