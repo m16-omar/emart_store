@@ -46,7 +46,7 @@ class WelcomeScreen extends StatelessWidget {
             SizedBox(
               height: 30.h,
             ),
-            GradientBtn(
+            CustomButton(
               text: AppText.kGetStarted,
               btnHieght: 35,
               radius: 20,

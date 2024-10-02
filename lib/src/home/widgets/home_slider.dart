@@ -72,7 +72,7 @@ class HomeSlider extends StatelessWidget {
 }
 
 List<String> images = [
-  "assets/images/placeholder1.webp",
+  "https://www.shutterstock.com/image-photo/brunette-asian-woman-red-fashionable-outfit-2235546605",
   "assets/images/placeholder1.webp",
   "assets/images/placeholder1.webp",
   "assets/images/placeholder1.webp",
