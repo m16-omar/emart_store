@@ -29,7 +29,7 @@ class R {
 
   /// ![preview](file:///Volumes/Transfer/Projects/fashion/assets/images/placeholder.webp)
   static const String ASSETS_IMAGES_PLACEHOLDER1_WEBP =
-      'assets/images/placeholder.webp';
+      'assets/images/placeholder1.webp';
 
   /// ![preview](file:///Volumes/Transfer/Projects/fashion/assets/images/splashscreen.png)
   static const String ASSETS_IMAGES_SPLASHSCREEN_PNG =

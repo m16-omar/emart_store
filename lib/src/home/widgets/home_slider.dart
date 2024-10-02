@@ -52,7 +52,7 @@ class HomeSlider extends StatelessWidget {
                     height: 5.h,
                   ),
                   Text(
-                    'Discount 50% off \nthe first transaction',
+                    'Discount 50% off \nThe first transaction',
                     style: appStyle(
                         14, Kolors.kWhite.withOpacity(.8), FontWeight.normal),
                   ),
@@ -73,4 +73,8 @@ class HomeSlider extends StatelessWidget {
 List<String> images = [
   "assets/images/placeholder1.webp",
   "assets/images/placeholder1.webp",
+  "assets/images/placeholder1.webp",
+  "assets/images/placeholder1.webp",
+//   "https://d326fntlu7tb1e.cloudfront.net/uploads/1.webp",
+//   "https://d326fntlu7tb1e.cloudfront.net/uploads/1.webp",
 ];

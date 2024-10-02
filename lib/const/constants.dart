@@ -48,12 +48,12 @@ BorderRadiusGeometry kRadiusBottom = const BorderRadius.only(
 );
 
 Widget Function(BuildContext, String)? placeholder = (p0, p1) => Image.asset(
-      'assets/images/placeholder.webp',
+      'assets/images/placeholder1.webp',
       fit: BoxFit.cover,
     );
 
 Widget Function(BuildContext, String, Object)? errorWidget =
     (p0, p1, p3) => Image.asset(
-          'assets/images/placeholder.webp',
+          'assets/images/placeholder1.webp',
           fit: BoxFit.cover,
         );
