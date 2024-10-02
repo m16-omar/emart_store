@@ -1,4 +1,5 @@
 import 'package:emart_store/src/auth/views/login_screen.dart';
+import 'package:emart_store/src/categories/views/categories_screen.dart';
 import 'package:emart_store/src/entrypoint/views/entrypoint.dart';
 import 'package:emart_store/src/notification/views/notification_screen.dart';
 import 'package:emart_store/src/onboarding/views/onboarding_screen.dart';
@@ -62,10 +63,10 @@ final GoRouter _router = GoRouter(
     //   path: '/register',
     //   builder: (context, state) => const RegistrationPage(),
     // ),
-    // GoRoute(
-    //   path: '/categories',
-    //   builder: (context, state) => const CategoriesPage(),
-    // ),
+    GoRoute(
+      path: '/categories',
+      builder: (context, state) => const CategoriesScreen(),
+    ),
     //  GoRoute(
     //   path: '/category',
     //   builder: (context, state) => const CategoryPage(),
