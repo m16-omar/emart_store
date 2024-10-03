@@ -48,14 +48,14 @@ class HomeSlider extends StatelessWidget {
                 children: [
                   ReusableText(
                       text: AppText.kCollection,
-                      style: appStyle(20, Kolors.kOffWhite, FontWeight.w600)),
+                      style: appStyle(20, Kolors.kDark, FontWeight.w600)),
                   SizedBox(
                     height: 5.h,
                   ),
                   Text(
                     'Discount 50% off \nThe first transaction',
                     style: appStyle(
-                        14, Kolors.kWhite.withOpacity(.8), FontWeight.normal),
+                        14, Kolors.kDark.withOpacity(.8), FontWeight.normal),
                   ),
                   SizedBox(
                     height: 10.h,
@@ -72,10 +72,9 @@ class HomeSlider extends StatelessWidget {
 }
 
 List<String> images = [
-  "https://www.shutterstock.com/image-photo/brunette-asian-woman-red-fashionable-outfit-2235546605",
-  "assets/images/placeholder1.webp",
-  "assets/images/placeholder1.webp",
-  "assets/images/placeholder1.webp",
-//   "https://d326fntlu7tb1e.cloudfront.net/uploads/1.webp",
-//   "https://d326fntlu7tb1e.cloudfront.net/uploads/1.webp",
+  "https://firebasestorage.googleapis.com/v0/b/authenification-b4dc9.appspot.com/o/uploads%2Fslider1.png?alt=media&token=8b27e621-e5ea-4ba4-ab15-0302d02c75f3",
+  "https://firebasestorage.googleapis.com/v0/b/authenification-b4dc9.appspot.com/o/uploads%2Fslider1.png?alt=media&token=8b27e621-e5ea-4ba4-ab15-0302d02c75f3",
+  "https://firebasestorage.googleapis.com/v0/b/authenification-b4dc9.appspot.com/o/uploads%2Fslider1.png?alt=media&token=8b27e621-e5ea-4ba4-ab15-0302d02c75f3",
+  "https://firebasestorage.googleapis.com/v0/b/authenification-b4dc9.appspot.com/o/uploads%2Fslider1.png?alt=media&token=8b27e621-e5ea-4ba4-ab15-0302d02c75f3",
+  "https://firebasestorage.googleapis.com/v0/b/authenification-b4dc9.appspot.com/o/uploads%2Fslider1.png?alt=media&token=8b27e621-e5ea-4ba4-ab15-0302d02c75f3",
 ];
