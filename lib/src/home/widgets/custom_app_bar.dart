@@ -39,7 +39,7 @@ class CustomAppBar extends StatelessWidget {
                 child: SizedBox(
                   width: ScreenUtil().screenWidth * 0.7,
                   child: Text(
-                    "Ikeja Lagos Nigeria",
+                    "Ikeja, Lagos, Nigeria",
                     maxLines: 1,
                     style: appStyle(14, Kolors.kDark, FontWeight.w500),
                   ),

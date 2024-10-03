@@ -1,3 +1,4 @@
+import 'package:emart_store/src/home/widgets/categories_list.dart';
 import 'package:emart_store/src/home/widgets/custom_app_bar.dart';
 import 'package:emart_store/src/home/widgets/home_header.dart';
 import 'package:emart_store/src/home/widgets/home_slider.dart';
@@ -20,11 +21,15 @@ class HomeScreen extends StatelessWidget {
           SizedBox(
             height: 20.h,
           ),
-          const HomeSlider(),
+          HomeSlider(),
           SizedBox(
             height: 15.h,
           ),
-          const HomeHeader(),
+          HomeHeader(),
+          SizedBox(
+            height: 10.h,
+          ),
+          HomeCategoriesList(),
         ],
       ),
     );
