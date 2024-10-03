@@ -3,6 +3,7 @@ import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:emart_store/common/widgets/back_button.dart';
 import 'package:emart_store/common/widgets/reusable_text.dart';
+import 'package:emart_store/const/constants.dart';
 import 'package:emart_store/src/categories/controllers/category_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -29,7 +30,7 @@ class CategoriesScreen extends StatelessWidget {
             final category = categories[i];
             return ListTile(
               onTap: () {
-                // go to category page
+                // go to category screen
                 context
                     .read<CategoryNotifier>()
                     .setCategory(category.title, category.id);

@@ -1,6 +1,7 @@
 import 'package:emart_store/common/utils/app_routes.dart';
 import 'package:emart_store/common/utils/environment.dart';
 import 'package:emart_store/common/utils/kstrings.dart';
+import 'package:emart_store/src/categories/controllers/category_notifier.dart';
 import 'package:emart_store/src/entrypoint/controllers/bottom_tab_notifier.dart';
 import 'package:emart_store/src/onboarding/controllers/onboarding_notifier.dart';
 import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
@@ -20,6 +21,7 @@ void main() async {
     providers: [
       ChangeNotifierProvider(create: (_) => OnboardingNotifier()),
       ChangeNotifierProvider(create: (_) => TabIndexNotifier()),
+      ChangeNotifierProvider(create: (_) => CategoryNotifier()),
     ],
     child: MyApp(),
   ));
