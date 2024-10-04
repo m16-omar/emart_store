@@ -1,7 +1,7 @@
-import 'package:fashion_app/common/services/storage.dart';
-import 'package:fashion_app/common/widgets/login_bottom_sheet.dart';
-import 'package:fashion_app/const/constants.dart';
-import 'package:fashion_app/src/products/widgets/staggered_tile_widget.dart';
+import 'package:emart_store/common/services/storage.dart';
+import 'package:emart_store/common/widgets/login_bottom_sheet.dart';
+import 'package:emart_store/const/constants.dart';
+import 'package:emart_store/src/products/widgets/staggered_tile_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';

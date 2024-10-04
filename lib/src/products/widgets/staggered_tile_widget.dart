@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:fashion_app/common/utils/kcolors.dart';
-import 'package:fashion_app/common/widgets/app_style.dart';
-import 'package:fashion_app/common/widgets/reusable_text.dart';
-import 'package:fashion_app/src/products/models/products_model.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/widgets/app_style.dart';
+import 'package:emart_store/common/widgets/reusable_text.dart';
+import 'package:emart_store/src/products/models/products_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
@@ -36,15 +36,19 @@ class StaggeredTileWidget extends StatelessWidget {
                         height: i % 2 == 0 ? 163.h : 180.h,
                         fit: BoxFit.cover,
                         imageUrl: product.imageUrls[0]),
-                       
-                        ///TODO: handle favorites
-                        Positioned(
-                          right: 10.h,
-                          top: 10.h,
-                          child: const CircleAvatar(
-                            backgroundColor: Kolors.kSecondaryLight,
-                            child:  Icon(AntDesign.heart, color: Kolors.kRed, size: 18,),
-                          ))
+
+                    ///TODO: handle favorites
+                    Positioned(
+                        right: 10.h,
+                        top: 10.h,
+                        child: const CircleAvatar(
+                          backgroundColor: Kolors.kSecondaryLight,
+                          child: Icon(
+                            AntDesign.heart,
+                            color: Kolors.kRed,
+                            size: 18,
+                          ),
+                        ))
                   ],
                 ),
               ),
