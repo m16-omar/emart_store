@@ -46,8 +46,13 @@ class HomeCategoriesList extends StatelessWidget {
                       ),
                     ),
                     ReusableText(
-                        text: category.title,
-                        style: appStyle(12, Kolors.kGray, FontWeight.normal))
+                      text: category.title,
+                      style: appStyle(
+                        12,
+                        Kolors.kGray,
+                        FontWeight.normal,
+                      ),
+                    )
                   ],
                 ),
               ),
