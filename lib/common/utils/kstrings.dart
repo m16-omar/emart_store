@@ -24,6 +24,8 @@ class AppText {
   static const String kViewAll = 'See All';
   static const String kFlash = 'Flash Sales';
   static const String kWishlist = 'Wishlist';
+
+  static const String kMyWishlist = 'My Wishlist';
   static const String kPDetails = 'Product Details';
   static const String kConfirm = 'Confirm Payment';
   static const String kTrack = 'Track Order';

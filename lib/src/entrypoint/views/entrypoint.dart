@@ -14,7 +14,7 @@ class AppEntryPoint extends StatelessWidget {
 
   List<Widget> pageList = [
     const HomeScreen(),
-    const WishlistScreen(),
+    const WishListScreen(),
     const CartScreen(),
     const ProfileScreen(),
   ];
