@@ -4,6 +4,7 @@ import 'package:emart_store/src/categories/views/category_screen.dart';
 import 'package:emart_store/src/entrypoint/views/entrypoint.dart';
 import 'package:emart_store/src/notification/views/notification_screen.dart';
 import 'package:emart_store/src/onboarding/views/onboarding_screen.dart';
+import 'package:emart_store/src/products/views/product_screen.dart';
 import 'package:emart_store/src/search/views/search_screen.dart';
 import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
 import 'package:flutter/material.dart';
@@ -108,13 +109,13 @@ final GoRouter _router = GoRouter(
     //   builder: (context, state) => const FailedPayment(),
     // ),
 
-    // GoRoute(
-    //   path: '/product/:id',
-    //   builder: (BuildContext context, GoRouterState state) {
-    //     final productId = state.pathParameters['id'];
-    //     return ProductPage(productId: productId.toString());
-    //   },
-    // ),
+    GoRoute(
+      path: '/product/:id',
+      builder: (BuildContext context, GoRouterState state) {
+        final productId = state.pathParameters['id'];
+        return ProductScreen(productId: productId.toString());
+      },
+    ),
   ],
 );
 

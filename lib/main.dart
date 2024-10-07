@@ -5,6 +5,8 @@ import 'package:emart_store/src/categories/controllers/category_notifier.dart';
 import 'package:emart_store/src/entrypoint/controllers/bottom_tab_notifier.dart';
 import 'package:emart_store/src/home/controllers/home_tab_notifier.dart';
 import 'package:emart_store/src/onboarding/controllers/onboarding_notifier.dart';
+import 'package:emart_store/src/products/controllers/colors_sizes_notifier.dart';
+import 'package:emart_store/src/products/controllers/product_notifier.dart';
 import 'package:emart_store/src/splashscreen/views/splashscreen_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
@@ -24,6 +26,8 @@ void main() async {
       ChangeNotifierProvider(create: (_) => TabIndexNotifier()),
       ChangeNotifierProvider(create: (_) => CategoryNotifier()),
       ChangeNotifierProvider(create: (_) => HomeTabNotifier()),
+      ChangeNotifierProvider(create: (_) => ProductNotifier()),
+      ChangeNotifierProvider(create: (_) => ColorSizesNotifier()),
     ],
     child: MyApp(),
   ));
@@ -43,7 +47,7 @@ class MyApp extends StatelessWidget {
       useInheritedMediaQuery: true,
       builder: (_, child) {
         return MaterialApp.router(
-          debugShowCheckedModeBanner: false,
+          debugShowCheckedModeBanner: true,
           title: AppText.kAppaName,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
