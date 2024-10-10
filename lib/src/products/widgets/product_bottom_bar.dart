@@ -40,27 +40,27 @@ class ProductBottomBar extends StatelessWidget {
                 ],
               ),
             ),
-            // ElevatedButton(
-            //     onPressed: onPressed,
-            //     style: ButtonStyle(
-            //         backgroundColor: WidgetStateProperty.all(Kolors.kPrimary)),
-            //     child: Row(
-            //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //       crossAxisAlignment: CrossAxisAlignment.center,
-            //       children: [
-            //         const Icon(
-            //           FontAwesome.shopping_bag,
-            //           size: 16,
-            //           color: Kolors.kWhite,
-            //         ),
-            //         SizedBox(
-            //           width: 8.w,
-            //         ),
-            //         ReusableText(
-            //             text: 'Checkout',
-            //             style: appStyle(14, Kolors.kWhite, FontWeight.bold)),
-            //       ],
-            //     ))
+            ElevatedButton(
+                onPressed: onPressed,
+                style: ButtonStyle(
+                    backgroundColor: WidgetStateProperty.all(Kolors.kPrimary)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      FontAwesome.shopping_bag,
+                      size: 16,
+                      color: Kolors.kWhite,
+                    ),
+                    SizedBox(
+                      width: 8.w,
+                    ),
+                    ReusableText(
+                        text: 'Checkout',
+                        style: appStyle(14, Kolors.kWhite, FontWeight.bold)),
+                  ],
+                ))
           ],
         ),
       ),
