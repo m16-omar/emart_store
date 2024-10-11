@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
           routerConfig: router,
         );
       },
-      child: const SplashScreen(),
+      child: SplashScreen(),
     );
   }
 }

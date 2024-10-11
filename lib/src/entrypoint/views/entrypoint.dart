@@ -13,10 +13,10 @@ class AppEntryPoint extends StatelessWidget {
   AppEntryPoint({super.key});
 
   List<Widget> pageList = [
-    const HomeScreen(),
-    const WishListScreen(),
-    const CartScreen(),
-    const ProfileScreen(),
+    HomeScreen(),
+    WishListScreen(),
+    CartScreen(),
+    ProfileScreen(),
   ];
 
   @override
@@ -42,38 +42,37 @@ class AppEntryPoint extends StatelessWidget {
                       currentIndex: tabIndexNotifier.index,
                       selectedItemColor: Kolors.kPrimary,
                       unselectedItemColor: Kolors.kGray,
-                      unselectedIconTheme:
-                          const IconThemeData(color: Colors.black38),
+                      unselectedIconTheme: IconThemeData(color: Colors.black38),
                       onTap: (i) {
                         tabIndexNotifier.setIndex(i);
                       },
                       items: [
                         BottomNavigationBarItem(
                             icon: tabIndexNotifier.index == 0
-                                ? const Icon(
+                                ? Icon(
                                     AntDesign.home,
                                     color: Kolors.kPrimary,
                                     size: 24,
                                   )
-                                : const Icon(
+                                : Icon(
                                     AntDesign.home,
                                     size: 24,
                                   ),
                             label: "Home"),
                         BottomNavigationBarItem(
                             icon: tabIndexNotifier.index == 1
-                                ? const Icon(
+                                ? Icon(
                                     Ionicons.heart,
                                     color: Kolors.kPrimary,
                                     size: 24,
                                   )
-                                : const Icon(
+                                : Icon(
                                     Ionicons.heart_outline,
                                   ),
                             label: "Wishlist"),
                         BottomNavigationBarItem(
                             icon: tabIndexNotifier.index == 2
-                                ? const Badge(
+                                ? Badge(
                                     label: Text('9'),
                                     child: Icon(
                                       MaterialCommunityIcons.shopping,
@@ -81,7 +80,7 @@ class AppEntryPoint extends StatelessWidget {
                                       size: 24,
                                     ),
                                   )
-                                : const Badge(
+                                : Badge(
                                     label: Text('9'),
                                     child: Icon(
                                       MaterialCommunityIcons.shopping_outline,
@@ -90,12 +89,12 @@ class AppEntryPoint extends StatelessWidget {
                             label: "Cart"),
                         BottomNavigationBarItem(
                             icon: tabIndexNotifier.index == 3
-                                ? const Icon(
+                                ? Icon(
                                     EvilIcons.user,
                                     color: Kolors.kPrimary,
                                     size: 34,
                                   )
-                                : const Icon(
+                                : Icon(
                                     EvilIcons.user,
                                     size: 34,
                                   ),
