@@ -5,6 +5,8 @@ class AppText {
   static const String kNotifications = 'Notifications';
   static const String kAddresses = 'Addresses';
   static const String kAddShipping = 'Add Shipping Address';
+
+  static const String kCartErrorText = 'Error Adding to Cart';
   static const String kErrorLogin =
       'Opps! Unable to log in with provided credentials.';
   static const String kErrorGetUser = 'Opps! Unable to get user data';

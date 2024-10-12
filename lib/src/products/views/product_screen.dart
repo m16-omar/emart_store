@@ -1,10 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:emart_store/common/services/storage.dart';
 import 'package:emart_store/common/utils/kcolors.dart';
-import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:emart_store/common/widgets/back_button.dart';
-import 'package:emart_store/common/widgets/error_modal.dart';
 import 'package:emart_store/common/widgets/login_bottom_sheet.dart';
 import 'package:emart_store/common/widgets/reusable_text.dart';
 import 'package:emart_store/const/constants.dart';
@@ -16,7 +14,6 @@ import 'package:emart_store/src/products/widgets/product_bottom_bar.dart';
 import 'package:emart_store/src/products/widgets/product_sizes_widget.dart';
 import 'package:emart_store/src/products/widgets/similar_products.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
@@ -202,22 +199,17 @@ class ProductScreen extends StatelessWidget {
               ),
             ],
           ),
-          // bottomNavigationBar: ProductBottomBar(
-          //   onPressed: () {
-          //     if (accessToken == null) {
-          //       loginBottomSheet(context);
-          //     } else {
-          //       if (context.read<ColorSizesNotifier>().color == '' ||
-          //           context.read<ColorSizesNotifier>().sizes == '') {
-          //         showErrorPopup(context, AppText.kCartErrorText,
-          //             "Error Adding to Cart", true);
-          //       } else {
-          //         ///TODO: CART LOGIC
-          //       }
-          //     }
-          //   },
-          //   price: productNotifier.product!.price.toStringAsFixed(2),
-          // ),
+          bottomNavigationBar: ProductBottomBar(
+            onPressed: () {
+              if (accessToken == null) {
+                loginBottomSheet(context);
+              } else {
+                if (context.read<ColorSizesNotifier>().color == '' ||
+                    context.read<ColorSizesNotifier>().sizes == '') ;
+              }
+            },
+            price: productNotifier.product!.price.toStringAsFixed(2),
+          ),
         );
       },
     );
