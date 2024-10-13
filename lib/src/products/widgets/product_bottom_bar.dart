@@ -49,7 +49,7 @@ class ProductBottomBar extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Icon(
+                    Icon(
                       FontAwesome.shopping_bag,
                       size: 16,
                       color: Kolors.kWhite,

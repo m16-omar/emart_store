@@ -1,9 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:emart_store/common/services/storage.dart';
 import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/utils/kstrings.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:emart_store/common/widgets/back_button.dart';
-import 'package:emart_store/common/widgets/login_bottom_sheet.dart';
+import 'package:emart_store/common/widgets/error_modal.dart';
 import 'package:emart_store/common/widgets/reusable_text.dart';
 import 'package:emart_store/const/constants.dart';
 import 'package:emart_store/src/products/controllers/colors_sizes_notifier.dart';
@@ -201,11 +202,15 @@ class ProductScreen extends StatelessWidget {
           ),
           bottomNavigationBar: ProductBottomBar(
             onPressed: () {
-              if (accessToken == null) {
-                loginBottomSheet(context);
+              // if (accessToken == null) {
+              //   loginBottomSheet(context);
+              // } else {
+              if (context.read<ColorSizesNotifier>().color == '' ||
+                  context.read<ColorSizesNotifier>().sizes == '') {
+                showErrorPopup(context, AppText.kCartErrorText,
+                    "Error Adding to Cart", true);
               } else {
-                if (context.read<ColorSizesNotifier>().color == '' ||
-                    context.read<ColorSizesNotifier>().sizes == '') ;
+                print('Add to Cart');
               }
             },
             price: productNotifier.product!.price.toStringAsFixed(2),
