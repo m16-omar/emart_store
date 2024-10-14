@@ -37,4 +37,7 @@ class R {
 
   /// ![preview](file:///Volumes/Transfer/Projects/emart_store/assets/images/wishlist.png)
   static const String ASSETS_IMAGES_WISHLIST_PNG = 'assets/images/wishlist.png';
+
+  /// ![preview](file:///Volumes/Transfer/Projects/emart_store/assets/images/profile.png)
+  static const String ASSETS_IMAGES_PROFILE_PNG = 'assets/images/profile.png';
 }

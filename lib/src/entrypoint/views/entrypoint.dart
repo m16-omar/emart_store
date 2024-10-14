@@ -9,9 +9,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:provider/provider.dart';
 
-class AppEntryPoint extends StatelessWidget {
+class AppEntryPoint extends StatefulWidget {
   AppEntryPoint({super.key});
 
+  @override
+  State<AppEntryPoint> createState() => _AppEntryPointState();
+}
+
+class _AppEntryPointState extends State<AppEntryPoint> {
   List<Widget> pageList = [
     HomeScreen(),
     WishListScreen(),

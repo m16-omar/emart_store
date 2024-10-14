@@ -3,9 +3,7 @@ import 'package:emart_store/src/onboarding/controllers/onboarding_notifier.dart'
 import 'package:emart_store/src/onboarding/views/widgets/onboarding_screen_one.dart';
 import 'package:emart_store/src/onboarding/views/widgets/onboarding_screen_two.dart';
 import 'package:emart_store/src/onboarding/views/widgets/welcome_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:provider/provider.dart';

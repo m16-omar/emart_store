@@ -13,7 +13,6 @@ class ProductBottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var WidgetStateProperty;
     return Container(
       height: 68.h,
       color: Colors.white.withOpacity(.6),
@@ -42,26 +41,29 @@ class ProductBottomBar extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-                onPressed: onPressed,
-                style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.all(Kolors.kPrimary)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(
-                      FontAwesome.shopping_bag,
-                      size: 16,
-                      color: Kolors.kWhite,
-                    ),
-                    SizedBox(
-                      width: 8.w,
-                    ),
-                    ReusableText(
-                        text: 'Checkout',
-                        style: appStyle(14, Kolors.kWhite, FontWeight.bold)),
-                  ],
-                ))
+              onPressed: onPressed,
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Kolors.kPrimary),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Icon(
+                    FontAwesome.shopping_bag,
+                    size: 16,
+                    color: Kolors.kWhite,
+                  ),
+                  SizedBox(
+                    width: 8.w,
+                  ),
+                  ReusableText(
+                    text: 'Checkout',
+                    style: appStyle(14, Kolors.kWhite, FontWeight.bold),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

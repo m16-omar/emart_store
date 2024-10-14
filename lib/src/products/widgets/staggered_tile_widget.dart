@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:emart_store/common/services/storage.dart';
 import 'package:emart_store/common/utils/kcolors.dart';
 import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:emart_store/common/widgets/reusable_text.dart';
@@ -22,7 +21,7 @@ class StaggeredTileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String? accessToken = Storage().getString('accessToken');
+    // String? accessToken = Storage().getString('accessToken');
     return GestureDetector(
       onTap: () {
         context.read<ProductNotifier>().setProuct(product);

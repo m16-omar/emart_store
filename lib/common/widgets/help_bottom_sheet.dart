@@ -21,7 +21,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Fashion App Help Center',
+                'e-Mart Store App Help Center',
                 style: appStyle(
                   18.0,
                   Kolors.kPrimary,
@@ -80,7 +80,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
                   Icon(MaterialCommunityIcons.email_outline),
                   SizedBox(width: 10.0),
                   Text(
-                    'support@fashionapp.com',
+                    'support@emartstore.com',
                     style: TextStyle(fontSize: 16.0),
                   ),
                 ],
@@ -92,7 +92,7 @@ Future<dynamic> showHelpCenterBottomSheet(BuildContext context) {
                   Icon(MaterialCommunityIcons.phone_outline),
                   SizedBox(width: 10.0),
                   Text(
-                    '+860000000000',
+                    '+2348031902398',
                     style: TextStyle(fontSize: 16.0),
                   ),
                 ],
