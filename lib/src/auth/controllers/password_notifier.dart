@@ -9,4 +9,6 @@ class PasswordNotifier with ChangeNotifier {
     _password = !_password;
     notifyListeners();
   }
+
+  void toogle() {}
 }

@@ -1,25 +1,26 @@
-import 'package:fashion_app/common/utils/kcolors.dart';
-import 'package:fashion_app/common/widgets/app_style.dart';
-import 'package:fashion_app/common/widgets/back_button.dart';
-import 'package:fashion_app/common/widgets/custom_button.dart';
-import 'package:fashion_app/common/widgets/email_textfield.dart';
-import 'package:fashion_app/common/widgets/password_field.dart';
-import 'package:fashion_app/src/auth/controllers/auth_notifier.dart';
-import 'package:fashion_app/src/auth/models/login_model.dart';
+import 'package:emart_store/common/utils/kcolors.dart';
+import 'package:emart_store/common/widgets/app_style.dart';
+import 'package:emart_store/common/widgets/back_button.dart';
+import 'package:emart_store/common/widgets/custom_button.dart';
+import 'package:emart_store/common/widgets/email_textfield.dart';
+import 'package:emart_store/common/widgets/password_field.dart';
+import 'package:emart_store/src/auth/controllers/auth_notifier.dart';
+import 'package:emart_store/src/auth/models/login_model.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginScreen> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPageState extends State<LoginScreen> {
   late final TextEditingController _usernameController =
       TextEditingController();
   late final TextEditingController _passwordController =
@@ -54,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
             height: 160.h,
           ),
           Text(
-            "Dbest Fashions",
+            "e-Mart Store",
             textAlign: TextAlign.center,
             style: appStyle(24, Kolors.kPrimary, FontWeight.bold),
           ),
@@ -114,7 +115,6 @@ class _LoginPageState extends State<LoginPage> {
                               username: _usernameController.text);
 
                           String data = loginModelToJson(model);
-
 
                           context.read<AuthNotifier>().loginFunc(data, context);
                         },

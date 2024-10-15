@@ -3,6 +3,7 @@ import 'package:emart_store/common/widgets/app_style.dart';
 import 'package:emart_store/common/widgets/back_button.dart';
 import 'package:emart_store/common/widgets/custom_button.dart';
 import 'package:emart_store/common/widgets/email_textfield.dart';
+import 'package:emart_store/common/widgets/password_field.dart';
 import 'package:emart_store/src/auth/controllers/auth_notifier.dart';
 import 'package:emart_store/src/auth/models/registration_model.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,14 +11,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
-class RegistrationPage extends StatefulWidget {
-  const RegistrationPage({super.key});
+class RegistrationScreen extends StatefulWidget {
+  const RegistrationScreen({super.key});
 
   @override
-  State<RegistrationPage> createState() => _RegistrationPageState();
+  State<RegistrationScreen> createState() => _RegistrationPageState();
 }
 
-class _RegistrationPageState extends State<RegistrationPage> {
+class _RegistrationPageState extends State<RegistrationScreen> {
   late final TextEditingController _usernameController =
       TextEditingController();
   late final TextEditingController _emailController = TextEditingController();
@@ -49,7 +50,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
             height: 160.h,
           ),
           Text(
-            "Dbest Fashions",
+            "e-Mart Store",
             textAlign: TextAlign.center,
             style: appStyle(24, Kolors.kPrimary, FontWeight.bold),
           ),
