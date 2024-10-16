@@ -42,7 +42,7 @@ class AppText {
   static const String kLocation = 'What is Your Location';
   static const String kLocationButton = 'Add Address';
   static const String kCart = 'Cart';
-  static const String kCheckout = 'Checkout';
+  static const String kCheckout = 'Check out';
   static const String kReciept = 'E-Reciept';
   static const String kDownload = 'Download E-Reciept';
   static const String kProfile = 'Profile';
