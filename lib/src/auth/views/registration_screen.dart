@@ -9,6 +9,7 @@ import 'package:emart_store/src/auth/models/registration_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -70,7 +71,7 @@ class _RegistrationPageState extends State<RegistrationScreen> {
             child: Column(
               children: [
                 EmailTextField(
-                  radius: 25,
+                  radius: 5,
                   hintText: "Username",
                   controller: _usernameController,
                   prefixIcon: const Icon(
@@ -87,7 +88,7 @@ class _RegistrationPageState extends State<RegistrationScreen> {
                   height: 25.h,
                 ),
                 EmailTextField(
-                  radius: 25,
+                  radius: 5,
                   focusNode: _passwordNode,
                   hintText: "Email",
                   controller: _emailController,
@@ -107,7 +108,7 @@ class _RegistrationPageState extends State<RegistrationScreen> {
                 PasswordField(
                   controller: _passwordController,
                   focusNode: _passwordNode,
-                  radius: 25,
+                  radius: 5,
                 ),
                 SizedBox(
                   height: 20.h,
@@ -142,6 +143,23 @@ class _RegistrationPageState extends State<RegistrationScreen> {
             ),
           )
         ],
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 130.h,
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 110.0),
+            child: GestureDetector(
+              onTap: () {
+                context.push('/login');
+              },
+              child: Text(
+                'Already have an account? Login',
+                style: appStyle(12, Colors.blue, FontWeight.normal),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

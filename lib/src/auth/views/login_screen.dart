@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginScreen> {
             child: Column(
               children: [
                 EmailTextField(
-                  radius: 25,
+                  radius: 5,
                   focusNode: _passwordNode,
                   hintText: "Username",
                   controller: _usernameController,
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginScreen> {
                 PasswordField(
                   controller: _passwordController,
                   focusNode: _passwordNode,
-                  radius: 25,
+                  radius: 5,
                 ),
                 SizedBox(
                   height: 20.h,

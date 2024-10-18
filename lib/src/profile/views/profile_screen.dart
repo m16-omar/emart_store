@@ -75,7 +75,7 @@ class ProfileScreen extends StatelessWidget {
                   title: 'Shipping Address',
                   leading: MaterialIcons.location_pin,
                   onTap: () {
-                    context.push('/addresses');
+                    context.push('/addaddress');
                   },
                 ),
                 ProfileTileWidget(
