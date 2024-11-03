@@ -59,7 +59,7 @@ class _RegistrationPageState extends State<RegistrationScreen> {
             height: 10.h,
           ),
           Text(
-            "Hi! Welcome back. You've been missed",
+            "Join us! Your adventure begins with just a few simple steps.",
             textAlign: TextAlign.center,
             style: appStyle(13, Kolors.kGray, FontWeight.normal),
           ),
